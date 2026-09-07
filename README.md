@@ -5,16 +5,12 @@
 **Five operational metrics for a ten-site hospital network, from raw table to one-page dashboard, in plain Excel.**
 
 ![Excel](https://img.shields.io/badge/Excel-formula--driven-217346?logo=microsoftexcel&logoColor=white)
-![Built with openpyxl](https://img.shields.io/badge/built%20with-openpyxl-3776AB?logo=python&logoColor=white)
 ![Rows](https://img.shields.io/badge/data%20rows-600-blue)
 ![Formulas](https://img.shields.io/badge/formulas-5%2C021-blue)
 ![Formula errors](https://img.shields.io/badge/formula%20errors-0-brightgreen)
 ![Data](https://img.shields.io/badge/data-synthetic-orange)
 
 </div>
-
-> **Disclaimer.** All data in this workbook is synthetically generated for demonstration purposes. It contains no real patient, hospital, or payer data.
-
 ---
 
 ## At a glance
