@@ -38,18 +38,6 @@
 
 ---
 
-## How the workbook flows
-
-```mermaid
-flowchart LR
-    D[(Data<br/>600 rows)] --> C[Calculations<br/>per-row metrics]
-    D --> S[Summary<br/>SUMIFS / SUMPRODUCT<br/>by dept, by month]
-    S --> T[Threshold monitor<br/>RAG flags]
-    S --> K[Dashboard<br/>KPI cards + 4 charts]
-    T --> K
-    M[Metric Definitions] -.documents.-> K
-```
-
 | Sheet | What it holds |
 |---|---|
 | **Read Me** | Purpose, metric definitions, colour legend, disclaimer |
