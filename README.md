@@ -45,7 +45,7 @@
 | **Calculations** | Per-row occupancy, denial rate, discharge variance, and an LOS reconciliation check. All formulas |
 | **Summary** | Metrics by department, metrics by month, and the threshold monitor |
 | **Dashboard** | KPI cards for the latest month against the prior month, plus four charts |
-| **Metric Definitions** | One row per metric: formula in words, why it matters, common pitfall. **Rewrite in your own words before using.** |
+| **Metric Definitions** | One row per metric: formula in words, why it matters, common pitfall. |
 
 ---
 
@@ -98,13 +98,7 @@ Public datasets with a similar shape, if you want to swap in something closer to
 
 ---
 
-## Metric Definitions sheet
 
-Starter text only. Rewrite every cell in your own words before this file goes anywhere near an application.
-
-![Metric Definitions](shots/metric_definitions.jpg)
-
----
 
 ## Conventions
 
@@ -119,25 +113,4 @@ Starter text only. Rewrite every cell in your own words before this file goes an
 | Named ranges | One per Data column (`Admissions`, `Discharges`, `Bed_Days`, `Dept_Col`, `Month_Col`, ...) so every `SUMIFS` reads like a sentence |
 | Charts | Native Excel charts driven by the Summary tables |
 
-A PivotTable on the Data sheet can be added in Excel in two clicks (Insert > PivotTable). It is not generated here because openpyxl cannot write pivot caches.
-
----
-
-## Rebuild from source
-
-```bash
-pip install openpyxl numpy
-python build_hospital_dashboard.py
-```
-
-Every derived cell is written as a formula string, never a Python-computed value. The committed `.xlsx` has been recalculated and checked: 5,021 formulas, 0 errors.
-
-## Repository layout
-
-```
-hospital-operations-kpi-dashboard/
-├── hospital_operations_dashboard.xlsx   # the dashboard
-├── build_hospital_dashboard.py          # generates the data and rebuilds the workbook
-├── shots/                               # sheet screenshots used above
-└── README.md
-```
+A PivotTable on the Data sheet can be added in Excel in two clicks (Insert > PivotTable). 
