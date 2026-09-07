@@ -10,8 +10,6 @@
 ![Formula errors](https://img.shields.io/badge/formula%20errors-0-brightgreen)
 ![Data](https://img.shields.io/badge/data-synthetic-orange)
 
-</div>
----
 
 ## At a glance
 
